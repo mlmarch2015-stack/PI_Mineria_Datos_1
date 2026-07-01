@@ -1,58 +1,82 @@
 # 📊 Proyecto Integrador - Minería de Datos I
 
-## Integrantes
+## Información general
 
+Proyecto Integrador de la asignatura **Minería de Datos I** – ITSE 2026.
+
+**Integrantes**
 - Marcia Lovaiza
 - Soledad Ríos
 
 ---
 
-## Descripción
+## Objetivo del proyecto
 
-Este proyecto corresponde al Proyecto Integrador de la materia Minería de Datos I.
-
-Se realizó un análisis exploratorio de un conjunto de datos de usuarios de una plataforma de streaming utilizando Python, Pandas, Matplotlib, Seaborn, Scikit-Learn y Streamlit.
+Analizar un conjunto de datos de usuarios de una plataforma de streaming mediante técnicas de inspección, limpieza, análisis exploratorio de datos (EDA) y reducción de dimensionalidad utilizando PCA, comunicando los resultados mediante una aplicación desarrollada en Streamlit.
 
 ---
 
-## Tecnologías utilizadas
+## Dataset
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-Learn
-- Streamlit
-- Git
-- GitHub
+Se trabajó con un conjunto de datos de usuarios de una plataforma de streaming. El dataset contiene variables demográficas, preferencias de contenido y características de uso de la plataforma. Se realizó una inspección inicial para evaluar la calidad de los datos antes de comenzar el análisis.
 
 ---
 
-## Contenido
-
-- Limpieza de datos
-- Análisis exploratorio (EDA)
-- Visualizaciones
-- Reducción de dimensionalidad mediante PCA
-- Aplicación web desarrollada con Streamlit
-
----
-
-## Estructura del proyecto
+## Estructura del repositorio
 
 ```
-app/
-assets/
-data/
-notebooks/
-.streamlit/
-requirements.txt
-README.md
+PI_Mineria_Datos_1/
+├── app/
+├── assets/
+├── data/
+├── logs/
+├── notebooks/
+├── reports/
+├── README.md
+└── requirements.txt
 ```
 
 ---
 
-## Estado del proyecto
+## Preparación y calidad de datos
 
-✅ Proyecto finalizado.
+Se realizó la inspección inicial del conjunto de datos, identificando valores faltantes, registros duplicados y tipos de datos. Posteriormente se efectuaron las tareas de limpieza, transformación y preparación necesarias para obtener un dataset consistente para el análisis.
+
+---
+
+## Resumen del análisis exploratorio (EDA)
+
+Se desarrolló un análisis univariado, bivariado y multivariado para identificar patrones, distribuciones y relaciones entre las variables del dataset. Los resultados permitieron comprender mejor el comportamiento de los usuarios y apoyar las conclusiones del proyecto.
+
+---
+
+## Reducción de dimensionalidad (PCA)
+
+Se aplicó escalamiento de variables y posteriormente el algoritmo PCA para reducir la dimensionalidad del conjunto de datos, analizando la varianza explicada por los componentes principales y facilitando la interpretación de la información.
+
+---
+
+## Visualización interactiva
+
+Aplicación desarrollada con Streamlit:
+
+**https://pi-mineria-marcia.streamlit.app**
+
+Repositorio GitHub:
+
+**https://github.com/mlmarch2015-stack/PI_Mineria_Datos_1**
+
+---
+
+## Cómo ejecutar el proyecto localmente
+
+```bash
+pip install -r requirements.txt
+streamlit run app/Home.py
+```
+
+---
+
+## Conclusiones
+
+El proyecto permitió aplicar las principales etapas del proceso de minería de datos: inspección, limpieza, análisis exploratorio y reducción de dimensionalidad. La aplicación desarrollada en Streamlit facilita la comunicación de los resultados obtenidos de forma clara e interactiva.
